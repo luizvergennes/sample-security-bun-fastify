@@ -23,16 +23,6 @@ const usuarios: Usuario[] = [];
 
 // Middleware para simular autenticação simples por API Key
 app.addHook("preHandler", (request, reply, done) => {
-	// Permitir requisições para registro de usuários e listar produtos sem chave
-	if (request.routeOptions.url === "/usuarios" && request.method === "POST") {
-		done();
-		return;
-	}
-	if (request.routeOptions.url === "/produtos" && request.method === "GET") {
-		done();
-		return;
-	}
-
 	const chaveApi = request.headers.authorization;
 	if (!chaveApi || chaveApi !== "ApiKey123") {
 		reply.code(401).send({
@@ -106,6 +96,7 @@ app.post<{ Body: { nome: string; email: string; senha: string } }>(
 			id: novoUsuario.id,
 			nome: novoUsuario.nome,
 			email: novoUsuario.email,
+			senhaHash: novoUsuario.senhaHash,
 		});
 	},
 );
