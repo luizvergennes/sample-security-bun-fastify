@@ -1,0 +1,36 @@
+type: http_request
+model: http_request
+id: rq_eH772WdUYB
+createdAt: 2025-06-28T19:32:19.617956
+updatedAt: 2025-06-28T19:42:25.681341
+workspaceId: wk_eEuLPPg834
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "nome": "Usuário de testes 1",
+      "email": "usuario1@mail.com",
+      "senha": "senha-qualquer"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: CFR2uUH2Wz
+- enabled: true
+  name: authorization
+  value: ${[ ApiKey ]}
+  id: 385CbWHYm4
+- enabled: true
+  name: ''
+  value: ''
+  id: wABXhhQ4WG
+method: POST
+name: Usuários
+sortPriority: 4000.0
+url: http://localhost:3000/usuarios
+urlParameters: []

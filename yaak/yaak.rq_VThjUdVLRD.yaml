@@ -1,0 +1,35 @@
+type: http_request
+model: http_request
+id: rq_VThjUdVLRD
+createdAt: 2025-06-28T19:26:37.816180
+updatedAt: 2025-06-28T19:45:55.706458
+workspaceId: wk_eEuLPPg834
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "nome": "Macbook M3 Max",
+      "preco": 20000
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: CFR2uUH2Wz
+- enabled: true
+  name: authorization
+  value: ${[ ApiKey ]}
+  id: aSmdZ7IReT
+- enabled: true
+  name: ''
+  value: ''
+  id: A9576uJf2t
+method: POST
+name: Produtos
+sortPriority: 1000.0
+url: http://localhost:3000/produtos
+urlParameters: []

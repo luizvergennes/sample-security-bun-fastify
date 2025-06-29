@@ -1,0 +1,32 @@
+type: http_request
+model: http_request
+id: rq_chv3NQQ7pE
+createdAt: 2025-06-28T19:33:16.065808
+updatedAt: 2025-06-28T19:42:19.514545
+workspaceId: wk_eEuLPPg834
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "nome": "Usuário de testes 1",
+      "email": "usuario1@mail.com",
+      "senha": "senha-qualquer"
+    }
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: authorization
+  value: ${[ ApiKey ]}
+  id: XBe9KISYkt
+- enabled: true
+  name: ''
+  value: ''
+  id: 8xymICCcJI
+method: GET
+name: Usuários
+sortPriority: 3000.0
+url: http://localhost:3000/usuarios
+urlParameters: []

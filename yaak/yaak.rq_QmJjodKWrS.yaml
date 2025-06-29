@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_QmJjodKWrS
+createdAt: 2025-06-28T19:25:35.020104
+updatedAt: 2025-06-28T19:41:48.784194
+workspaceId: wk_eEuLPPg834
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: authorization
+  value: ${[ ApiKey ]}
+  id: zFy4Zb2KGT
+- enabled: true
+  name: ''
+  value: ''
+  id: gDt2jUNUTW
+method: GET
+name: Produtos
+sortPriority: 0.0
+url: http://localhost:3000/produtos
+urlParameters: []

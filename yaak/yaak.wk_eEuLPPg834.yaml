@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_eEuLPPg834
+createdAt: 2025-06-28T19:19:36.240953
+updatedAt: 2025-06-28T19:25:29.122256
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Projeto de Extensão - Segurança
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
